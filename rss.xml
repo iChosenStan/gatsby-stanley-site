@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Stanley Oliveira]]></title><description><![CDATA[Meu Site Pessoal]]></description><link>http://stanley.net.br</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 17 Oct 2020 05:12:36 GMT</lastBuildDate><item><title><![CDATA[Sentiment Analysis of Amazon Reviews]]></title><description><![CDATA[LSTM built using PyTorch to predict whether a certain review is positive or negative (sentiment). 🍟 Results A noticeable plateau occurs at…]]></description><link>http://stanley.net.br/lstm-amazon-reviews/</link><guid isPermaLink="false">http://stanley.net.br/lstm-amazon-reviews/</guid><pubDate>Sat, 11 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;LSTM built using PyTorch to predict whether a certain review is positive or negative (sentiment).&lt;/p&gt;
+&lt;h2&gt;🍟 Results&lt;/h2&gt;
+&lt;p&gt;A noticeable plateau occurs at around Step 5000 at the first epoch. A decrease in alpha (learning rate) is recommended and an increase in the number of embedding dimensions and hidden dimensions. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Test Loss: 0.211
+Test Accuracy: 91.692%&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;🍰 Training the Model&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the &lt;a href=&quot;https://www.kaggle.com/bittlingmayer/amazonreviews?&quot;&gt;dataset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Extract the dataset&lt;/li&gt;
+&lt;li&gt;Run the jupyter notebook&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;⚙️ Requirements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Python &gt;= 3.7.0&lt;/li&gt;
+&lt;li&gt;Jupyter Notebook&lt;/li&gt;
+&lt;li&gt;NumPy&lt;/li&gt;
+&lt;li&gt;PyTorch&lt;/li&gt;
+&lt;li&gt;CUDA 11.0&lt;/li&gt;
+&lt;li&gt;Optional: tqdm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;📜 Dataset&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.kaggle.com/bittlingmayer/amazonreviews?&quot;&gt;Amazon Reviews for Sentiment Analysis (Kaggle)&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🧑 Author&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Kristian Espina&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Golang Pixel-based bot for Ragnarok Online]]></title><description><![CDATA[An automation tool for Ragnarok Online with Gepard Shield Protection written using Golang and GoCV. 🍰 Video Demo Pixel Bot Demo Video…]]></description><link>http://stanley.net.br/pixel-bot/</link><guid isPermaLink="false">http://stanley.net.br/pixel-bot/</guid><pubDate>Thu, 02 Jan 2020 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e29db6ffa268abae6072adfbf86f53c3/8ff1e/pixelbot_banner.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAABbElEQVQoz6WS3UvCUBjG/VeD/CCNbsqgi+4SolQoL4Mkuiwl60JIivmRtjEVp9uZRbgtPxnze+zjnNV0gSWRhs/V4eX8zvs+531sHyvItuQ9vjcg2iIQu7KmzcMIIcMw5gCrwkm9w/jDPc36Sq+JCjhO4U9Cc4IYxl+drcc6o/FmIntbBicXZ1c5fK9cK7U6MxhCWCwWRVGUZRkiZFVMKYqCIFQh9FZ4Oy0E4neePFin6y9SfwZzHHceDl9HIoFgMBKN3sRiR37/gc93GgphySSE2i7JOEFzg2272ZaL4khBmMJTz5qmYRiWyWRIksQJIpfL5QuFZxxPpdOArQ77opegnGzLw7y7QcNB1ZJVYJla7FnR9Z3Sm4tpuJm6CdspjuhIPz4MfZfxpclx4l/fp/k1c2ym4QBNZ1nguv3pLhbt2Wr+SJGm7a0Kv03VLvEs0pRlQ2J2UIeSqiriaCyrmj4eGAj+L2ErxfNXfQKYg9EhgP+BLAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Bot Banner&quot;
+        title=&quot;Bot Banner&quot;
+        src=&quot;/static/e29db6ffa268abae6072adfbf86f53c3/b9e4f/pixelbot_banner.png&quot;
+        srcset=&quot;/static/e29db6ffa268abae6072adfbf86f53c3/cf440/pixelbot_banner.png 148w,
+/static/e29db6ffa268abae6072adfbf86f53c3/d2d38/pixelbot_banner.png 295w,
+/static/e29db6ffa268abae6072adfbf86f53c3/b9e4f/pixelbot_banner.png 590w,
+/static/e29db6ffa268abae6072adfbf86f53c3/8ff1e/pixelbot_banner.png 800w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+An automation tool for Ragnarok Online with Gepard Shield Protection written using Golang and GoCV.&lt;/p&gt;
+&lt;h2&gt;🍰 Video Demo&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=cx92LeBfn1s&quot; title=&quot;Pixel Bot Demo Video&quot;&gt;&lt;img src=&quot;http://img.youtube.com/vi/cx92LeBfn1s/0.jpg&quot; alt=&quot;Pixel Bot Demo Video&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🍯 Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Random Walk&lt;/li&gt;
+&lt;li&gt;Auto Attack&lt;/li&gt;
+&lt;li&gt;Auto Loot&lt;/li&gt;
+&lt;li&gt;Auto Teleport&lt;/li&gt;
+&lt;li&gt;Auto Potion&lt;/li&gt;
+&lt;li&gt;Auto Skill&lt;/li&gt;
+&lt;li&gt;Auto Heal&lt;/li&gt;
+&lt;li&gt;MVP Detection&lt;/li&gt;
+&lt;li&gt;Encrypted License Checking (AES)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🍠 Requirements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Go Lang &gt;= 1.13&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🍻 Usage&lt;/h2&gt;
+&lt;p&gt;Windows&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;go build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Linux&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;go build &lt;span class=&quot;token comment&quot;&gt;# to compile&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# or&lt;/span&gt;
+go run *.go &lt;span class=&quot;token comment&quot;&gt;# to run&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Unofficial BSU Portal using ReactJS]]></title><description><![CDATA[Live Demo: 🍨 Click Here Project Repository: ✨ Available on Github 🍖 Project Details An unofficial portal for checking student’s grades…]]></description><link>http://stanley.net.br/react-bsu-portal/</link><guid isPermaLink="false">http://stanley.net.br/react-bsu-portal/</guid><pubDate>Sat, 09 Nov 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Live Demo: &lt;a href=&quot;https://unofficial-bsu-portal.herokuapp.com/&quot;&gt;🍨 Click Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Project Repository: &lt;a href=&quot;https://github.com/kristianespina/Unofficial-BSU-Portal&quot;&gt;✨ Available on Github&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🍖 Project Details&lt;/h2&gt;
+&lt;p&gt;An unofficial portal for checking student’s grades using publicly accessible batstate-u.edu.ph endpoints. Uses &lt;strong&gt;GraphQL&lt;/strong&gt; under REST API for the backend and &lt;strong&gt;ReactJS&lt;/strong&gt; + Bulma.io for the frontend&lt;/p&gt;
+&lt;h2&gt;📸 Project Screenshot&lt;/h2&gt;
+&lt;h3&gt;Desktop View&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/hSsLxRT.png&quot; alt=&quot;Project Screenshot&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;🌦 Requirements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;node.js&lt;/li&gt;
+&lt;li&gt;create-react-app&lt;/li&gt;
+&lt;li&gt;graphql&lt;/li&gt;
+&lt;li&gt;apollo-client&lt;/li&gt;
+&lt;li&gt;apollo-server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;📂 Project Structure&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.
+├── LICENSE
+├── README.md
+├── bsu-portal-graphql-server
+│   ├── README.md
+│   ├── package-lock.json
+│   ├── package.json
+│   └── src
+│       ├── datasources
+│       │   └── BSUAPI.js
+│       ├── index.js
+│       └── schema.js
+└── bsu-portal-react-frontend
+    ├── README.md
+    ├── package-lock.json
+    ├── package.json
+    ├── public
+    │   ├── favicon.ico
+    │   ├── index.html
+    │   ├── manifest.json
+    │   └── robots.txt
+    └── src
+        ├── API
+        │   └── client.js
+        ├── App.css
+        ├── App.js
+        ├── App.test.js
+        ├── Assets
+        │   ├── 2.svg
+        │   └── rocket.svg
+        ├── components
+        │   ├── Grades.js
+        │   └── Name.js
+        ├── index.css
+        ├── index.js
+        └── serviceWorker.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;🚀 Usage&lt;/h2&gt;
+&lt;h3&gt;To launch both the back-end and the front-end:&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;To launch the &lt;strong&gt;Back-End Server&lt;/strong&gt;:&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; bsu-portal-graphql-server
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;To launch the &lt;strong&gt;Front-End Server&lt;/strong&gt;:&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; bsu-portal-react-frontend
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;⚙ Installation&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run postinstall&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;👊 Contributing&lt;/h2&gt;
+&lt;p&gt;Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.&lt;/p&gt;
+&lt;h2&gt;🧑 Author&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Kristian Espina&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;📄 License&lt;/h2&gt;
+&lt;p&gt;This project is licensed under &lt;a href=&quot;https://choosealicense.com/licenses/mit/&quot;&gt;MIT&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[C# Bot for RO Mobile : Eternal Love (Android)]]></title><description><![CDATA[tl;dr This bot also utilizes multi-threading, queueing and asyncio. Written using C# + EmguCV Technologies Used Windows C# Winforms EmguCV…]]></description><link>http://stanley.net.br/romobile-bot/</link><guid isPermaLink="false">http://stanley.net.br/romobile-bot/</guid><pubDate>Sat, 02 Nov 2019 22:40:32 GMT</pubDate><content:encoded>&lt;h2&gt;tl;dr&lt;/h2&gt;
+&lt;p&gt;This bot also utilizes multi-threading, queueing and asyncio. Written using C# + EmguCV&lt;/p&gt;
+&lt;h2&gt;Technologies Used&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows C#&lt;/li&gt;
+&lt;li&gt;Winforms&lt;/li&gt;
+&lt;li&gt;EmguCV&lt;/li&gt;
+&lt;li&gt;Tesseract-OCR&lt;/li&gt;
+&lt;li&gt;RegEx&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Milestones&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatic MVP Hunting&lt;/li&gt;
+&lt;li&gt;Optical Character Recognition (OCR)&lt;/li&gt;
+&lt;li&gt;MVP Timer&lt;/li&gt;
+&lt;li&gt;Sprite Detection&lt;/li&gt;
+&lt;li&gt;User Interface&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Source Code&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;del&gt;Unfortunately, the project is closed-source. Preview of source code available upon request.&lt;/del&gt; EDIT: Opensourced*&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gitlab.com/onelespina/ro-mobile-assistant&quot;&gt;https://gitlab.com/onelespina/ro-mobile-assistant&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Project: AI Trashcan]]></title><description><![CDATA[This project was submitted under IE 532 Technoproneurship Class at Batangas State University. Problem Despite strong environmental activism…]]></description><link>http://stanley.net.br/ai-trashcan/</link><guid isPermaLink="false">http://stanley.net.br/ai-trashcan/</guid><pubDate>Sat, 02 Nov 2019 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;This project was submitted under IE 532 Technoproneurship Class at Batangas State University.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Despite strong environmental activism among Filipinos, the
+Philippines still suffers from trash problems. The Philippines generates an estimated 43,684 tons of garbage daily,
+including 4,609 tons of plastic waste, according to government data, and proper disposal facilities are lacking for
+much of it&lt;/p&gt;
+&lt;h2&gt;Solution&lt;/h2&gt;
+&lt;p&gt;A trashcan which sorts garbage using a custom-trained &lt;strong&gt;convolutional neural network (CNN)&lt;/strong&gt; model according to the following classifications:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cardboards&lt;/li&gt;
+&lt;li&gt;glass&lt;/li&gt;
+&lt;li&gt;metals&lt;/li&gt;
+&lt;li&gt;papers&lt;/li&gt;
+&lt;li&gt;plastics&lt;/li&gt;
+&lt;li&gt;trash&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Convolutional Neural Network&lt;/h2&gt;
+&lt;p&gt;A Convolutional Neural Network (ConvNet/CNN) is a Deep Learning algorithm which can take in an input image, assign importance (learnable weights and biases) to various aspects/objects in the image and be able to differentiate one from the other. The pre-processing required in a ConvNet is much lower as compared to other classification algorithms. While in primitive methods filters are hand-engineered, with enough training, ConvNets have the ability to learn these filters/characteristics.
+&lt;a href=&quot;https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53&quot;&gt;Source: towardsdatascience.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Dataset&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To train our model, we’ve used &lt;a href=&quot;https://github.com/garythung/trashnet&quot;&gt;Garythung’s Trashnet Dataset&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The data set contains about 501 glass bottle, 594 paper, 403 cardboard, 482 plastic, 410 metal, 137 trash images&lt;/p&gt;
+&lt;h2&gt;Training Result (Prediction Loss)&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/eb15e897fd6aab74f7b5e45a7330ec51/319b8/loss.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 87.73234200743494%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAAEv0lEQVQ4y4WSe0xTVxzHjzof0UWEqmstVMFKaSmlT2gLhb5u3/f29vb29gUFLGW2oFhFFyCKkznxgdMwhhREJlHmtv+WzGzZI7otLC5bnH+YLXOLf2wuwcUtkzHBx2+1s/yxZdkv+eack985n/N7IfTftjQtXloFCC3KX4QW56f33LSK0mKh/7Hlaa18uq74h2/RU/gzaS15ev7XW+7mNctYOetWIJu2fLNdJ5/CNNYvzRXEZ1UV0htqmUCfvU04sAN+H/FNJFQ/5fd6rtEe4ryhWrfsic9MmgtaQ/GpA0znV7gdn3I4rJ8jp1lSHsQ9cDbWAx9098IuZidI1Qp/FmgxYBOMOQY4FgYf5QaKcN4gXa7lGaDfLgwaGGBEGKgrlWCz1QKi3VpxmA7MDkV3z1/e1z3T1bgfdBYjlQXmrn42JeQWAp+9bkZcWgIup+Mqh12SAXoc7uI169bOpovwQFGQN1ehEMyhiA+XNoU9UOclIUR4IdpUn44EDy6kXOuZxNRaEAs2QqVCDUlnw3e/T76YAbo9PmGt0gRSdiEoC1hQJtwEqN5L5Ico+whDGcYCtGnYT9re8BJ2ZRZ42N7fGNd3XdBojcMyiWKCUQZ7vk+OP2kQWiUWPtcX2ZEaa4iN5eXkjmrVqjPIZa1hkU6yvcP50u6QvqHNYtLtNlVV87NA3G0yuN3WTooiE2aHeafZZWSijROZTh9vGs9pJw/toIiGJE25Em6XrRURpE66J9oJjfo4aEQKCNBuwEzVCynXBwOT9eEgNNdtg55EFzAe+qbHpc2k/E5yRDjYfAaCVAzcuAUotwNQPNZQhmOGPzewlj4U8TfPtgU7YRu+faEpNEmOrOewAZMa/7iyfxwaqcQXSysys4dONg0X90eG7+8JHHrotJHzmMn7ACVaEhKnwQqlXD4QMtfjc4lJSDWc9mWBAcY7rtVUgtscfBwPtgGJ49cxoyYDdJBBwV7/QTgeOg29vj44tbUX0MHooGi09fXbH3acmL45fPL2py8MPRiNDOFZYFNd66mQPzBLU+RPOO6453UzH0XormV/f+bjNwXafx5sHJq+3ndy+sdzx6aRTUqudJRWm/dQektnMqyv0zmtYW1obRboqLIWa6SlzlqlyKCVCLAamVz53uCtjC+y/fAKjdVktAjl1td8OoPXqDahNTkcUV4u925u3sZ7nBzVnSJuJcjlGiILtKqKBjB5IRjLeXdU/LX3y3irrwg47EyEWyV1fI/Nf7dGJ7vHW7XyV7RkyW+IwyqSrM/bAhX5FtCx8Efl+QTgxshCDZ2V/LN0bQmYFLxHWiEbRDzW1zUVykwNb13qEoxvbwNteuALt/DALiYA2awysbhEMtuhDcwPkL6ZZNXzcDR4YqHLNiU3ZVFsBEtZyYxatAFk/PVX9eWqDPDt1LHii/HuWbNIP18trp4b9fXOoZf3viobSKTg4x098G2qE3452g+ftPSGskCNaMPFPgKHaz3boN2gB42Q/QOtLMgAy8QKkU3NgFIsB7uKgO7IEUDnOy7lvbnrreYLLadj78cHolc7Xmm73HqkMAusEUtqRjzhVnh3Z3SIouOyTfnUviha/MSnr1XlSOWlzQIBp8VmwGN1TDL2F7Oxs/guEAmcAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Image&quot;
+        title=&quot;Image&quot;
+        src=&quot;/static/eb15e897fd6aab74f7b5e45a7330ec51/b9e4f/loss.png&quot;
+        srcset=&quot;/static/eb15e897fd6aab74f7b5e45a7330ec51/cf440/loss.png 148w,
+/static/eb15e897fd6aab74f7b5e45a7330ec51/d2d38/loss.png 295w,
+/static/eb15e897fd6aab74f7b5e45a7330ec51/b9e4f/loss.png 590w,
+/static/eb15e897fd6aab74f7b5e45a7330ec51/319b8/loss.png 807w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+Looking at the third highest loss, the model detects the metal lid as &lt;strong&gt;&lt;em&gt;metal&lt;/em&gt;&lt;/strong&gt; however, due to the mislabeling of garythung’s trashnet dataset which labelled the image as &lt;strong&gt;&lt;em&gt;glass&lt;/em&gt;&lt;/strong&gt; when in fact it is metal. Hence, it is imperative that we check if the dataset has correct labels.&lt;/p&gt;
+&lt;h2&gt;Confusion Matrix&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/481b2b0aebad2231a36347a9e44a4164/809be/confusion_matrix.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 101.39664804469275%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAk6AAAJOgHwZJJKAAADr0lEQVQ4y62UTWxUVRTHx5UJJo3uga5w2rBgy4aEGBOjccGi0YUIIRE2LoTHFLVEIdavQKJ1YYgBS0kaQCmUDztQKIzgJC3ijC2l0mGw007n6830vTfvY973vcdz75s3YWy6MPEmJ3fm3Ht+9/zvOe9GIjh6vp/oeGdwSug5OXlQGJkWqoohKJoprNRx1q0D+ZL4UfrhXH96dv5oviLHRNkQJLUhyFqDz2gHZM3sLdeUXYwXef3IUNe+0aew59ICHLlThLUGRSOw9qjrVo4Dt75/fPNbQ2lnx48pf//oYxfXvNAsD7yGQ7yGSz3ZcD0JTbVIy89m06WOgyepDSfNgaeT2c5zqRL5eVqE4QdFOnAjS4+NZejQb0sUgynCqG6TVWY4FI1QBPLE64Y9w4GJxN2oTwI1mbJBN37wC7y4bxS29d8BUXWg3vCgbvqAgdzwAFDQhxmDanE/YcGYYQCM37wd1WxCCF7STF7lwJcQuP3zBOgWAQ/FO2gchtpCoLQWsFyTO3Ej8dFZVBz67fUncHwsAwPjWThzvwCDU8twZVYEvC9uDIySASWjEVgl+fK1eDdzso0YQL1mKRckC94eSsEbP/wO+y/NYbY+qKbHYQzMsm0e0J7h3eTkJuYMNlFa010eOFPQoGcwBa+duA/C5cdtLRLeZwikzwCfwwbeaOAdhkCWAdtcwoKM/FmGCzMinLn3FD4euALCsYswMJwA2+d7uaFsnqGsW2GGU5sYsLmBhnIcDCJN+alHeYi8/B5E1u+E7jeP8swUVhSsvmb5BENBUs0AODJ6tfvfQNMNsmQtgxPcS+cg0rUXIhvehS07PmuT3wJqZlhlhVfZbkpmp6om4S2BB/FMc+U6fHXqFnx9chy+PJ2ATy/Mwodnp+HErexqyfHxiWhbUTQXqnh/ku5xIKsuW6PNjB4WDHhh93l4fuc5eKV/olXlVttcHbvRFQBpO9AIgByKtqI5YOHdJudr0LHnJ1i36zy8+sVtPCzoQ63V2FWl89kqo2Q0wmfDppT5cJ3/N12guapJv7ueod/E5+lwcpEWFZtgy0JO1ALgtfjNKAa4KM3HYI+ZYfvNmXjo9/Cr8DTT97BI/Hf4GqEy71FBc/4qGTCdk4PX5tfkVBT+4yDN99FGW1IBRAffgUVpgQOf/J3vECUttlQQD9cUI1aT9d7Fgti3Um/EKivqIfT3Kbp9sFitH8oti334oscqktabW64cLtS02B/ZSu/kXP6TB5nSbtbUkf9z/API+AMrO21XkwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Confusion MAtrix&quot;
+        title=&quot;Confusion MAtrix&quot;
+        src=&quot;/static/481b2b0aebad2231a36347a9e44a4164/b9e4f/confusion_matrix.png&quot;
+        srcset=&quot;/static/481b2b0aebad2231a36347a9e44a4164/cf440/confusion_matrix.png 148w,
+/static/481b2b0aebad2231a36347a9e44a4164/d2d38/confusion_matrix.png 295w,
+/static/481b2b0aebad2231a36347a9e44a4164/b9e4f/confusion_matrix.png 590w,
+/static/481b2b0aebad2231a36347a9e44a4164/809be/confusion_matrix.png 716w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Source Code&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This project is available on &lt;a href=&quot;https://github.com/kristianespina/trash-classifier&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;How to Use?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Simply run the project on Jupyter Notebook.&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Challenge: Convert Amount to Words]]></title><description><![CDATA[A solution which I submitted on a facebook group named Programmer Ako using Python and without importing any library. Generally, this could…]]></description><link>http://stanley.net.br/challenge-num2words/</link><guid isPermaLink="false">http://stanley.net.br/challenge-num2words/</guid><pubDate>Fri, 01 Nov 2019 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;A solution which I submitted on a facebook group named &lt;strong&gt;&lt;em&gt;Programmer Ako&lt;/em&gt;&lt;/strong&gt; using Python and without importing any library.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Generally, this could easily be done with libraries. However, to make this challenge a little bit more challenging, I decided not to import any python libraries.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Solution&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;ones &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;One&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Two&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Three&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Four&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Five&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Six&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Seven&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Eight&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Nine&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Ten&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Eleven&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Twelve&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Thirteen&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Fourteen&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Fifteen&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Sixteen&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Seventeen&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Eighteen&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Nineteen&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+tens &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Twenty&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Thirty&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Forty&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Fifty&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Sixty&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Seventy&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Eighty&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Ninety&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+misc &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Thousand&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Million&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Billion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Trillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Quadrillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Quintillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Sextillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Septillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Octillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Nonillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Decillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Undecillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Duodecillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Tredecillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Quattuordecillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Quindecillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Sexdecillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Septendecillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Octodecillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Novemdecillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Vigintillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Centillion&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+get_text &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;lambda&lt;/span&gt; amount&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; text&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;text&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ones&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;amount&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; amount &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; get_text&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;amount&lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; tens&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;amount&lt;span class=&quot;token operator&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; amount &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;and&lt;/span&gt; amount &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; get_text&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;amount&lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ones&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;amount&lt;span class=&quot;token operator&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos; Hundred &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+amount_in_words &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;lambda&lt;/span&gt; amount&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; text&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;join&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;get_text&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;amount&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; misc&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;amount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos; &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;amount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;amount_in_words&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;lambda&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;zfill&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Enter amount: &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[First Blog Post]]></title><description><![CDATA[Hi. This is actually my first blog post. This blog is made using GatsbyJS. A static site generator. Modern web tech without the headache…]]></description><link>http://stanley.net.br/first-post/</link><guid isPermaLink="false">http://stanley.net.br/first-post/</guid><pubDate>Thu, 31 Oct 2019 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Hi. This is actually my first blog post. This blog is made using GatsbyJS.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A static site generator. Modern web tech without the headache Enjoy the power of the latest web technologies – React.js , Webpack , modern JavaScript and CSS and more — all set up and waiting for you to start building.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;What is GatsbyJS&lt;/h2&gt;
+&lt;p&gt;Gatsby is a React-based, GraphQL powered, static site generator. What does that even mean?  Well, it weaves together the best parts of React, webpack, react-router, GraphQL, and other front-end tools in to one very enjoyable developer experience. Don’t get hung up on the moniker ‘static site generator’.  That term has been around for a while, but Gatsby is far more like a modern front-end framework than a static site generator of old.&lt;/p&gt;
+&lt;p&gt;It uses powerful preconfiguration to build a website that uses only static files for incredibly fast page loads, service workers, code splitting, server-side rendering, intelligent image loading, asset optimization, and data prefetching. All out of the box. I didn’t believe the speed until I tried it myself.&lt;/p&gt;
+&lt;p&gt;You code and develop your site, Gatsby transforms it into a directory with a single HTML file and your static assets. This folder is uploaded to your favorite hosting provider, and voila.
+Overall think, part Jekyll, part create-react-app.&lt;/p&gt;
+&lt;h2&gt;What makes GatsbyJS Special?&lt;/h2&gt;
+&lt;p&gt;You may be thinking, “I have a nice web pack config I use”, or “create-react-app works for me”, or “Jekyll is fine for my blog.”  Well, I think there are three things that make Gatsby very special versus these other tools.&lt;/p&gt;
+&lt;p&gt;First, is the way Gatsby uses GraphQL to build it’s data layer.  What do I mean by that?  Gatsby is made to collect your data from wherever it may be: Markdown, JSON, your favorite CMS, third party APIs, anywhere! And at build time, it creates an internal GraphQL server of all of this data. So in your react components, all of your data is queried at build time from that same place, in the same way through GraphQL.&lt;/p&gt;
+&lt;p&gt;The second reason it’s special is the richness of the Gatsby ecosystem. Gatsby has not been around for too long, but already boasts great documentation, and a number of starters to help you get a site up quickly.  That GraphQL data collection I mentioned before may sound intimidating, but due to Gatsby’s well-documented data source plugins, it can be as simple as a few lines of code in the config file.&lt;/p&gt;
+&lt;p&gt;Lastly, is its dedication to performance. Every aspect of performance and accessibility is a point of emphasis, and you can really feel that in the final product.  More so than any boilerplate or generator I have come across, Gatsby lives up to the hype.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In a general sense&lt;/strong&gt;, the world of powerful static site generator framework tools like Gatsby is growing stronger. I believe you will see more and more movement to tools like this for vast sections of website building.  In many languages, not just in React, static site generators are being seen as a way to build the web of the future.  Gatsby itself is built upon some of the fastest growing web technologies today: React, GraphQL, and webpack.  I can’t repeat enough how much Gatsby is blast to build with, and I believe its future is very, very bright.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.mediacurrent.com/what-is-gatsby.js&quot;&gt;https://www.mediacurrent.com/what-is-gatsby.js&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
