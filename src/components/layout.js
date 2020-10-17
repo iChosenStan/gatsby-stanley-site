@@ -22,7 +22,7 @@ class Layout extends React.Component {
             <div className="stats">
                 <span className="stat">CAFÉ</span>
                 <span className="stat w-3/4">BACKEND</span>
-                <span className="stat w-3/5">FRONTEND</span>
+                <span className="stat w-2/5">FRONTEND</span>
                 <span className="stat w-2/5">SEO</span>
             </div>
 
