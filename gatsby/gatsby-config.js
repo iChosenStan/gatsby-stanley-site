@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Kristian Espina`,
-    author: `Kristian Espina`,
-    description: `My Personal Portfolio`,
-    siteUrl: `https://espina.dev/`,
+    title: `Stanley Oliveira`,
+    author: `Stanley Oliveira`,
+    description: `Meu Site Pessoal`,
+    siteUrl: `http://stanley.net.br/`,
     social: {
-      twitter: `onelespina`,
+      twitter: `iChosenStan`,
     },
   },
   plugins: [
@@ -56,6 +56,16 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
+        // <!-- Global site tag (gtag.js) - Google Analytics -->
+        // <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32341176-1"></script>
+        // <script>
+        //   window.dataLayer = window.dataLayer || [];
+        //   function gtag(){dataLayer.push(arguments);}
+        //   gtag('js', new Date());
+
+        //   gtag('config', 'UA-32341176-1');
+        // </script>
+        trackingId: `UA-32341176-1`,
       },
     },
     `gatsby-plugin-feed`,
