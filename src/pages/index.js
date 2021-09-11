@@ -52,6 +52,7 @@ class BlogIndex extends React.Component {
 
 export default BlogIndex
 
+
 export const pageQuery = graphql`
   query {
     site {
@@ -67,7 +68,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM YYYY")
+            date(formatString: "DD/MM/YYYY")
             title
             description
             tags {

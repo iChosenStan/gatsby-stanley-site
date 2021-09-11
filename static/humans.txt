@@ -9,12 +9,11 @@
                                |___/ 
   STANLEY.NET.BR
 
-  Designer:       Stanley Oliveira
-  Localização:    Natal - RN, Brasil
-  Redes Sociais:  @iChosenStan
-
+  Designer:         Stanley Oliveira
+  Location:         Natal - RN, Brazil
+  Social networks:  @iChosenStan
   Language:       Portuguese
-  Feito com:      Gatsby <https://www.gatsbyjs.org/>
+  Made with:      Gatsby <https://www.gatsbyjs.org/>
                   Visual Studio Code <https://code.visualstudio.com/>
                   GitHub <https://github.com/features/actions>
                   Netlify <https://www.netlify.com/>
