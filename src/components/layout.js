@@ -44,7 +44,7 @@ class Layout extends React.Component {
     <footer>
       <br>
 		  </br>
-        Página feita em GatsbyJS por Stanley de Oliveira. Todos os Direitos Reservados.
+      © 2020 - 2021 Página feita em GatsbyJS por <a href="https://stanley.net.br/humans.txt">Stanley de Oliveira</a>.
     </footer>
     </>
     )
