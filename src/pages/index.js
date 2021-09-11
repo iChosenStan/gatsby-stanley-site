@@ -12,7 +12,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="Todas as postagens" />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -39,7 +39,7 @@ class BlogIndex extends React.Component {
                   }}
                 />
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                    <button className="btn_more bg-white">See More</button>
+                    <button className="btn_more bg-white">Leia mais</button>
                 </Link>
               </section>
             </article>
@@ -67,7 +67,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD, MMMM de YYYY")
             title
             description
             tags {
