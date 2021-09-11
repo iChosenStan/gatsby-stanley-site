@@ -42,7 +42,8 @@ class Layout extends React.Component {
         </section>
       </div>
     <footer>
-		</br>
+      <br>
+		  </br>
         Página feita em GatsbyJS por Stanley de Oliveira. Todos os Direitos Reservados.
     </footer>
     </>
