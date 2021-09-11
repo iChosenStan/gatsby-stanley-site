@@ -4,9 +4,9 @@ Meu site pessoal construído usando GatsbyJS.
 Demonstração: [Clique aqui](http://stanley.net.br)
 
 ## 🧀 Estrutura do Repositório
-Existem dois (2) branches neste repositório git:
-- **gh-pages (Branch Padrão)** - onde o código github-pages-ready é publicado.
-- **master** - onde ocorre o desenvolvimento.
+Existem duas branches neste repositório git:
+- **gh-pages** - onde o código github-pages é publicado.
+- **master (Branch Padrão)** - onde ocorre o desenvolvimento.
 
 
 ## 🥤 Requisitos
