@@ -1,31 +1,31 @@
-# espina.dev
-My personal website built using GatsbyJS. Website theme built from ground up.
+# stanley.net.br
+Meu site pessoal construído usando GatsbyJS.
 
-Live Demo: [Click Here](http://espina.dev)
+Demonstração: [Clique aqui](http://stanley.net.br)
 
-## 🧀 Repository Structure
-There are two (2) branches in this git repository namely:
-- **gh-pages (Default Branch)** - where github-pages-ready code is published
-- **master** - where development happens
+## 🧀 Estrutura do Repositório
+Existem dois (2) branches neste repositório git:
+- **gh-pages (Branch Padrão)** - onde o código github-pages-ready é publicado.
+- **master** - onde ocorre o desenvolvimento.
 
 
-## 🥤 Requirements
+## 🥤 Requisitos
 - node.js
-- a github account (optional)
+- uma conta no github (opcional)
 
-## ⚙ Installation
+## ⚙ Instalação
 ```bash
 npm install
 ```
 
-## 🚀 Deploying to Github
+## 🚀 Implantando no Github
 ```bash
 gatsby deploy
 or
 npm run deploy
 ```
 
-## 🌤 Development
+## 🌤 Desenvolvimento
 ```bash
 gatsby develop
 ```

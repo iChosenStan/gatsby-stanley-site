@@ -26,7 +26,7 @@ class Navbar extends React.Component {
             </div>
         </div>
         <div className={menuActive}>
-        <Link to="/"></Link><span className="block px-2 py-1 text-white font-semibold hover:bg-black">Home</span>
+        <Link to="/"></Link><span className="block px-2 py-1 text-white font-semibold hover:bg-black">Inicio</span>
         <a href="https://github.com/iChosenStan" className="block px-2 py-1 text-white font-semibold hover:bg-black">Github</a>
         <Link to="/about"><span className="block px-2 py-1 text-white font-semibold hover:bg-black">Sobre</span></Link>
         </div>
